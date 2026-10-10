@@ -1,0 +1,32 @@
+[application]
+config/name="Torben Snake"
+config/version="0.0.1"
+config/icon="res://assets/icon.svg"
+config/description="Torben Snake, a neon arcade game for Windows and Web."
+run/main_scene="res://scenes/main.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[display]
+
+window/size/viewport_width=960
+window/size/viewport_height=720
+window/size/window_width_override=960
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+window/size/min_width=360
+window/size/min_height=480
+
+[input_devices]
+
+pointing/emulate_mouse_from_touch=false
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+textures/default_filters/use_nearest_mipmap_filter=false
+
+[gui]
+
+theme/default_font_multichannel_signed_distance_field=true
